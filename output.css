@@ -717,10 +717,6 @@ video {
   margin: 0.5rem;
 }
 
-.m-20 {
-  margin: 5rem;
-}
-
 .m-3 {
   margin: 0.75rem;
 }
@@ -894,18 +890,6 @@ video {
 
 .h-\[40em\] {
   height: 40em;
-}
-
-.h-\[50em\] {
-  height: 50em;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[100em\] {
-  height: 100em;
 }
 
 .w-28 {
@@ -2639,6 +2623,7 @@ video {
 
 body {
   background-image: url('./assets/bg-img.jpg');
+  background-attachment: fixed;
 }
 
 @media (min-width: 640px) {
