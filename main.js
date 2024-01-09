@@ -1,25 +1,41 @@
-const status_Ori = document.getElementById("status_bar")
-const status_bar = document.getElementById("status_check").innerText
-const test = document.getElementById('test')
-const nav_line = document.getElementById('nav_line')
+const chat_bar = document.getElementById("status_bar");
+const nav_line = document.getElementById('nav_line');
 const status_default = document.getElementById('status_default');
-const defaults = document.getElementById("Default")
+const defaults = document.getElementById("Default");
+
+
+const call_nav_default = document.getElementById('call_nav_default');
+const default_call = document.getElementById('default_call');
+
+// ! When i click this function it will 
+//! disable the display in another two function
 
 function statuschange() {
-    if (status_bar === "STATUS") {
-        nav_line.style.marginLeft = "12em"
-        status_Ori.style.display = "none"
-        status_default.style.display = "block"
-        test.style.visibility = "visible"
-        defaults.style.display = "none"
-    }
+    nav_line.style.marginLeft = "12em"
+    chat_bar.style.display = "none"
+    call_nav_default.style.display = "none"
+    //^ status
+    status_default.style.display = "block"
+    defaults.style.display = "none"
 }
 
-function secoundfuc() {
+function chatfunc() {
     nav_line.style.marginLeft = "4em"
-    status_Ori.style.display = "block"
-    test.style.visibility = "hidden"
+    chat_bar.style.display = "block"
+    call_nav_default.style.display = "none"
+    status_default.style.display = "none"
 }
+
+function callfunc() {
+    nav_line.style.width = "6.5em"
+    nav_line.style.marginLeft = "18em"
+    chat_bar.style.display = "none";
+    status_default.style.display = "none"
+
+    call_nav_default.style.display = "block"
+    default_call.style.display = "none"
+}
+
 
 var ham_nav = document.getElementById('ham_nav');
 const ham_icons = document.getElementById('ham_icons');
@@ -31,13 +47,5 @@ function navbar() {
     ham_nav.classList.toggle('hidden')
 }
 
-window.onclick = function (event) {
-    if (!event.target.matches('.btn')) {
-        for (var i = 0; i < ul.length; i++) {
-            var openDropdown = ul[i];
-            if (openDropdown.classList.contains('hidden')) {
-                openDropdown.classList.remove('hidden');
-            }
-        }
-    }
-}
+
+function ifclick() { }

@@ -10,7 +10,8 @@
 </head>
 
 <body class="">
-    <nav class="flex justify-center align-middle ">
+    <!-- flex -->
+    <nav class="flex justify-center align-middle">
         <section class="section">
             <section class="w-[24.5em] ">
                 <div class=" bg-emerald-800 sticky top-0">
@@ -38,11 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- nav bar -->
-                    <!-- position: absolute;
-            left: 0px;
-            top: 0px;
-            z-index: -1; -->
+
                     <div id="ham_nav" class=" show hidden mr-2 absolute left-44 top-15 z-1  transition ease-in-out">
                         <nav class="flex justify-end ">
                             <div class=" p-2 w-52 bg-white rounded-lg border-2 border-slate-200 overflow-hidden">
@@ -65,7 +62,7 @@
                         </svg>
                         <div class="flex mr-2">
                             <h6 class="mr-2 "><a href="#">
-                                    <button onclick="secoundfuc()">CHATS</button>
+                                    <button onclick="chatfunc()" id="chats_check">CHATS</button>
                                 </a>
                             </h6>
                             <span class="px-1 py-0.5 text-gray-700 text-sm bg-white rounded-full">10</span>
@@ -77,7 +74,7 @@
                         </div>
                         <div class=" mr-1">
                             <h6><a href="#">
-                                    CALLS
+                                    <button onclick="callfunc()" id="calls_check">CALLS</button>
                                 </a></h6>
                         </div>
                     </div>
@@ -85,7 +82,7 @@
                     </div>
                 </div>
                 <!-- chat section -->
-                <section id="status_bar" class=" bg-white overflow-y-scroll scroll-smooth h-[40em]">
+                <section id="status_bar"  class=" bg-white overflow-y-scroll scroll-smooth h-[40em]">
                     <div class="flex  hover:bg-slate-200">
                         <div class=" p-2 rounded-full">
                             <img class="rounded-full " src="./assets/clg.png" alt="profile_img1" width="65px">
@@ -123,7 +120,7 @@
                         </div>
                         <div class=" mt-1 p-3 mr-10 w-52 overflow-hidden">
                             <h6 class="font-semibold">
-                                Vaishu Clg🤞
+                                Vaishu Clg🤞🤩
                             </h6>
                             <p class="text-gray-400 text-sm flex">
                                 <span class="flex px-1">
@@ -153,7 +150,7 @@
                         </div>
                         <div class=" mt-1 p-3 mr-10 w-52 overflow-hidden">
                             <h6 class="font-semibold">
-                                Suba🥰
+                                Suba🥰😍
                             </h6>
                             <p class="text-gray-400 text-sm flex">
                                 <span class="flex px-1">
@@ -327,7 +324,7 @@
                         </div>
                         <div class=" mt-2 p-3 mr-10 w-60  overflow-hidden">
                             <h6 class="font-semibold">
-                                3 Idiots...🙈🙉🙊
+                                🥰3 Idiots...🙈🙉🙊
                             </h6>
                             <p class="w-96 text-gray-400 text-sm flex">
                                 <span class="flex px-1">
@@ -350,6 +347,7 @@
                         </div>
                     </div>
                     <!-- 10 -->
+
                     <div class="flex  hover:bg-slate-200">
                         <div class="m-3 rounded-full border-green-600 border-2">
                             <img class="rounded-full p-0.5" src="./assets/swetha_1.png" alt="image.png" width="70px"
@@ -443,8 +441,8 @@
             </section>
 
             <!-- inn -->
-
-            <section id="status_default" class=" hidden w-96">
+            <!-- */Status default bar/* -->
+            <section id="status_default" class="w-[24.5em] hidden">
                 <!-- hidden -->
                 <div id="Default" class=" bg-emerald-800 sticky top-0">
                     <div class=" flex justify-between p-3 pt-5">
@@ -457,7 +455,7 @@
                                     d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06zM10.5 7a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0"
                                     clip-rule="evenodd" />
                             </svg>
-                            <div id="settings" class="ml-4">
+                            <div id="settings" class="ml-4 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256">
                                     <path fill="#ffffff"
                                         d="M156 128a28 28 0 1 1-28-28a28 28 0 0 1 28 28m-28-52a28 28 0 1 0-28-28a28 28 0 0 0 28 28m0 104a28 28 0 1 0 28 28a28 28 0 0 0-28-28" />
@@ -603,9 +601,262 @@
                     </div>
                 </section>
             </section>
-        </section>
-    </nav>
 
+            <!-- Calls section -->
+            <!-- ^ calls section  -->
+            <!-- inn -->
+            <section id="call_nav_default" class="hidden w-[24.5em]">
+                <!-- hidden -->
+                <div id="default_call" class=" bg-emerald-800 sticky top-0">
+                    <div class=" flex justify-between p-3 pt-5">
+                        <h2 class=" text-white ">
+                            WhatsApp
+                        </h2>
+                        <div class="flex ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16">
+                                <path fill="#ffffff" fill-rule="evenodd"
+                                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06zM10.5 7a3.5 3.5 0 1 1-7 0a3.5 3.5 0 0 1 7 0"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <div id="settings" class="ml-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256">
+                                    <path fill="#ffffff"
+                                        d="M156 128a28 28 0 1 1-28-28a28 28 0 0 1 28 28m-28-52a28 28 0 1 0-28-28a28 28 0 0 0 28 28m0 104a28 28 0 1 0 28 28a28 28 0 0 0-28-28" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- camera features -->
+                    <div class="mt-2 flex justify-between  text-white p-3 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                            <path fill="#ffffff"
+                                d="M12 17.5q1.875 0 3.188-1.312T16.5 13q0-1.875-1.312-3.187T12 8.5q-1.875 0-3.187 1.313T7.5 13q0 1.875 1.313 3.188T12 17.5m0-2q-1.05 0-1.775-.725T9.5 13q0-1.05.725-1.775T12 10.5q1.05 0 1.775.725T14.5 13q0 1.05-.725 1.775T12 15.5M4 21q-.825 0-1.412-.587T2 19V7q0-.825.588-1.412T4 5h3.15L8.4 3.65q.275-.3.663-.475T9.875 3h4.25q.425 0 .813.175t.662.475L16.85 5H20q.825 0 1.413.588T22 7v12q0 .825-.587 1.413T20 21z" />
+                        </svg>
+                        <div class="flex mr-2">
+                            <h6 class="mr-2 "><a href="#">
+                                    CHATS
+                                </a>
+                            </h6>
+                            <span class="px-1 py-0.5 text-gray-700 text-sm bg-white rounded-full">10</span>
+                        </div>
+                        <div>
+                            <h6><button onclick="statuschange()" id="status_check">
+                                    STATUS
+                                </button></h6>
+                        </div>
+                        <div class=" mr-1">
+                            <h6><a href="#">
+                                    CALLS
+                                </a></h6>
+                        </div>
+                    </div>
+                    <div id="nav_line" class="bg-white ml-16 w-28 h-1"></div>
+                </div>
+                <!-- out of  -->
+
+                <!-- callsection -->
+
+                <section id="call_contant" class=" w-[24.5em] h-[40em] bg-white">
+                    <!-- invisible -->
+                    <div class="flex p-5">
+                        <div class="bg-emerald-600 rounded-full p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                                <path fill="#ffffff"
+                                    d="M80 120h96a8 8 0 0 1 0 16H80a8 8 0 0 1 0-16m24 48H64a40 40 0 0 1 0-80h40a8 8 0 0 0 0-16H64a56 56 0 0 0 0 112h40a8 8 0 0 0 0-16m88-96h-40a8 8 0 0 0 0 16h40a40 40 0 0 1 0 80h-40a8 8 0 0 0 0 16h40a56 56 0 0 0 0-112" />
+                            </svg>
+                        </div>
+                        <div class="ml-6 ">
+                            <h6 class="font-semibold">
+                                Create call link
+                            </h6>
+                            <p class="   text-gray-400 text-sm flex">
+                                Share a link for your WhatsApp call
+                            </p>
+                        </div>
+                    </div>
+                    <!-- recent -->
+                    <div class="ml-6 ">
+                        <h6 class="font-semibold">
+                            Recent
+                        </h6>
+                    </div>
+                    <div>
+                        <!-- arrow-up-right -->
+                        <div class=" hover:bg-slate-200 ">
+                            <div class="flex m-6 ">
+                                <div class="mt-2">
+                                    <img class="rounded-full " src="assets/image1.png" alt="profile_img1" width="60px">
+                                </div>
+                                <div class=" p-3 w-52 ">
+                                    <h6 class="font-semibold pl-2">
+                                        Suba🥰😍
+                                    </h6>
+                                    <p class="text-gray-400 text-sm flex">
+                                        <span class="flex px-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="#16a34a" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M18.365 5.636h-7.071m7.07 0v7.071m0-7.07L5.638 18.363" />
+                                            </svg>
+                                        </span>
+                                        Today,12:15 pm
+                                    </p>
+                                </div>
+                                <div class="py-6 pl-16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="#059669"
+                                            d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 2 -->
+
+
+
+                    <div>
+                        <!-- arrow-up-right -->
+                        <div class=" hover:bg-slate-200 ">
+                            <div class="flex m-6 ">
+                                <div class="mt-2">
+                                    <img class="rounded-full " src="assets/image1.png" alt="profile_img1" width="60px">
+                                </div>
+                                <div class=" p-3 w-52 ">
+                                    <h6 class="font-semibold pl-2">
+                                        Suba🥰😍
+                                    </h6>
+                                    <p class="text-gray-400 text-sm flex">
+                                        <span class="flex px-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="#16a34a" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M18.365 5.636h-7.071m7.07 0v7.071m0-7.07L5.638 18.363" />
+                                            </svg>
+                                        </span>
+                                        Today,12:15 pm
+                                    </p>
+                                </div>
+                                <div class="py-6 pl-16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="#059669"
+                                            d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 3 -->
+                    <div>
+                        <!-- arrow-up-right -->
+                        <div class=" hover:bg-slate-200 ">
+                            <div class="flex m-6 ">
+                                <div class="mt-2">
+                                    <img class="rounded-full " src="assets/image1.png" alt="profile_img1" width="60px">
+                                </div>
+                                <div class=" p-3 w-52 ">
+                                    <h6 class="font-semibold pl-2">
+                                        Suba🥰😍
+                                    </h6>
+                                    <p class="text-gray-400 text-sm flex">
+                                        <span class="flex px-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="#16a34a" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M18.365 5.636h-7.071m7.07 0v7.071m0-7.07L5.638 18.363" />
+                                            </svg>
+                                        </span>
+                                        Today,12:15 pm
+                                    </p>
+                                </div>
+                                <div class="py-6 pl-16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="#059669"
+                                            d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 4 -->
+                    <div>
+                        <!-- arrow-up-right -->
+                        <div class=" hover:bg-slate-200 ">
+                            <div class="flex m-6 ">
+                                <div class="mt-2">
+                                    <img class="rounded-full " src="assets/image1.png" alt="profile_img1" width="60px">
+                                </div>
+                                <div class=" p-3 w-52 ">
+                                    <h6 class="font-semibold pl-2">
+                                        Suba🥰😍
+                                    </h6>
+                                    <p class="text-gray-400 text-sm flex">
+                                        <span class="flex px-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="#16a34a" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M18.365 5.636h-7.071m7.07 0v7.071m0-7.07L5.638 18.363" />
+                                            </svg>
+                                        </span>
+                                        Today,12:15 pm
+                                    </p>
+                                </div>
+                                <div class="py-6 pl-16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="#059669"
+                                            d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 5 -->
+                    <div>
+                        <!-- arrow-up-right -->
+                        <div class=" hover:bg-slate-200 ">
+                            <div class="flex m-6 ">
+                                <div class="mt-2">
+                                    <img class="rounded-full " src="assets/image1.png" alt="profile_img1" width="60px">
+                                </div>
+                                <div class=" p-3 w-52 ">
+                                    <h6 class="font-semibold pl-2">
+                                        Suba🥰😍
+                                    </h6>
+                                    <p class="text-gray-400 text-sm flex">
+                                        <span class="flex px-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                viewBox="0 0 24 24">
+                                                <path fill="none" stroke="#16a34a" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-width="2"
+                                                    d="M18.365 5.636h-7.071m7.07 0v7.071m0-7.07L5.638 18.363" />
+                                            </svg>
+                                        </span>
+                                        Today,12:15 pm
+                                    </p>
+                                </div>
+                                <div class="py-6 pl-16">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                        <path fill="#059669"
+                                            d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h12q.825 0 1.413.588T18 6v4.5l4-4v11l-4-4V18q0 .825-.587 1.413T16 20z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 6 -->
+                </section>
+            </section>
+            <!-- nav closed -->
+    </nav>
     <script src="./main.js"></script>
 </body>
 
