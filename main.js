@@ -47,5 +47,7 @@ function navbar() {
     ham_nav.classList.toggle('hidden')
 }
 
-
-function ifclick() { }
+const status_threedot = document.getElementById('status_threedot');
+function status_setting() {
+    // status_dd
+}
